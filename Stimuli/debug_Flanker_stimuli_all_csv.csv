@@ -1,0 +1,80 @@
+﻿item_nr,all,flanker_type,lexicality,condition
+16,rici,no,nonword,nonword/no
+27,afmi,no,nonword,nonword/no
+29,gois,no,nonword,nonword/no
+33,pluc,no,nonword,nonword/no
+35,groi,no,nonword,nonword/no
+47,uage,no,nonword,nonword/no
+49,tion,no,nonword,nonword/no
+62,uque,no,nonword,nonword/no
+65,ster,no,nonword,nonword/no
+72,oile,no,nonword,nonword/no
+75,insi,no,nonword,nonword/no
+78,ucun,no,nonword,nonword/no
+85,dets,no,nonword,nonword/no
+104,stue,no,nonword,nonword/no
+1,mais,no,word,word/no
+8,pas,no,word,word/no
+38,monde,no,word,word/no
+42,mama,no,word,word/no
+48,comme,no,word,word/no
+53,dire,no,word,word/no
+55,orange,no,word,word/no
+60,boule,no,word,word/no
+64,gard,no,word,word/no
+70,sans,no,word,word/no
+71,pleut,no,word,word/no
+74,chose,no,word,word/no
+84,retard,no,word,word/no
+90,toi,no,word,word/no
+91,rien,no,word,word/no
+98,suis,no,word,word/no
+4,uise uise uise,related,nonword,nonword/related
+13,hime hime hime,related,nonword,nonword/related
+14,jive jive jive,related,nonword,nonword/related
+21,lube lube lube,related,nonword,nonword/related
+22,flar flar flar,related,nonword,nonword/related
+24,posi posi posi,related,nonword,nonword/related
+34,jage jage jage,related,nonword,nonword/related
+40,zors zors zors,related,nonword,nonword/related
+43,bral bral bral,related,nonword,nonword/related
+45,carc carc carc,related,nonword,nonword/related
+46,brir brir brir,related,nonword,nonword/related
+58,onue onue onue,related,nonword,nonword/related
+67,guve guve guve,related,nonword,nonword/related
+69,spen spen spen,related,nonword,nonword/related
+5,toi toi toi,related,word,word/related
+7,une une une,related,word,word/related
+9,mais mais mais,related,word,word/related
+17,chien chien chien,related,word,word/related
+31,monde monde monde,related,word,word/related
+37,vite vite vite,related,word,word/related
+44,boire boire boire,related,word,word/related
+51,manger manger manger,related,word,word/related
+56,avec avec avec,related,word,word/related
+68,comme comme comme,related,word,word/related
+81,frere frere frere,related,word,word/related
+89,boxe boxe boxe,related,word,word/related
+3,sabe cofi sabe,unrelated,nonword,nonword/unrelated
+6,flin uter flin,unrelated,nonword,nonword/unrelated
+10,momb rers momb,unrelated,nonword,nonword/unrelated
+11,juss fabe juss,unrelated,nonword,nonword/unrelated
+15,glur vece glur,unrelated,nonword,nonword/unrelated
+18,bame pluo bame,unrelated,nonword,nonword/unrelated
+25,drac mexe drac,unrelated,nonword,nonword/unrelated
+28,aste imci aste,unrelated,nonword,nonword/unrelated
+30,ucun iers ucun,unrelated,nonword,nonword/unrelated
+54,alon bube alon,unrelated,nonword,nonword/unrelated
+59,nour sige nour,unrelated,nonword,nonword/unrelated
+63,atal coui atal,unrelated,nonword,nonword/unrelated
+66,chen orir chen,unrelated,nonword,nonword/unrelated
+2,vite comme vite,unrelated,word,word/unrelated
+12,suis mais suis,unrelated,word,word/unrelated
+19,elle veux elle,unrelated,word,word/unrelated
+20,ton sur ton,unrelated,word,word/unrelated
+23,dire sous dire,unrelated,word,word/unrelated
+26,moi non moi ,unrelated,word,word/unrelated
+32,les chat les,unrelated,word,word/unrelated
+36,cinq son cinq,unrelated,word,word/unrelated
+39,gare nord gare,unrelated,word,word/unrelated
+41,petit choco petit,unrelated,word,word/unrelated

@@ -1,0 +1,2005 @@
+__main__ DEBUG:namespace(task_to_run='EmbeddedWords_German', short={'french': 'fr', 'german': 'de', 'english': 'en', 'dutch': 'nl'}, run_exp=True, analyze_results=True, optimize=False, print_all=True, plotting=False, stim=   Unnamed: 0  item_nr       prime      all   target                        condition
+0           0        1  akzeptabel    akzep    akzep     truly suffixed/related prime
+1           1        2     heilbar    akzep    akzep   truly suffixed/unrelated prime
+2           2        3  mutterland   mutter   mutter    pseudo suffixed/related prime
+3           3        4      banane   mutter   mutter  pseudo suffixed/unrelated prime
+4           4        5  gesichtarf  gesicht  gesicht       non suffixed/related prime
+5           5        6        holz  gesicht  gesicht     non suffixed/unrelated prime, language='german', stimcycles=120, is_experiment=True, is_priming_task=True, blankscreen_type='hashgrid', blankscreen_cycles_begin=5, blankscreen_cycles_end=0, ncyclesprime=2, POS_implemented=False, affix_implemented=True, totalcycles=127, trial_ends_on_key_press=True, affix_system=True, simil_algo='lcs', max_edit_dist=1, short_word_cutoff=3, CYCLE_SIZE=25, attendWidth=8.0, use_grammar_prob=True, uniform_pred=False, grammar_weight=0.5, include_sacc_type_sse=True, sacc_type_objective='total', include_sacc_dist_sse=True, tuning_measure='SSE', discretization='bin', objective=[], output_dir=1667947475.4135182, epsilon=0.1, decay=-0.05, bigram_to_word_excitation=1.65, bigram_to_word_inhibition=0, word_inhibition=-1.2, word_length_similarity_constant=0.15, letPerDeg=0.3, min_activity=0.0, max_activity=1.3, max_attend_width=5.0, min_attend_width=3.0, attention_skew=4, bigram_gap=2, min_overlap=2, refix_size=0.2, salience_position=4.99, corpora_repeats=0, frequency_flag=True, prediction_flag=True, similarity_based_recognition=True, use_saccade_error=True, use_attendposition_change=True, visualise=False, slow_word_activity=False, pauze_allocation_errors=False, use_boundary_task=False, sacc_optimal_distance=9.99, saccErr_scaler=0.2, saccErr_sigma=0.17, saccErr_sigma_scaler=0.06, mu=10.09, sigma=5.36, distribution_param=5.0, max_threshold=1, wordfreq_p=0.4, wordpred_p=0.2)
+simulate_experiments WARNING:language or task has no POS data.                 Unable to use grammar pred values for this task. Switching to unfiform pred values
+simulate_experiments DEBUG:individual words: ['_akzep_', '_mutter_', '_gesicht_', '_akzeptabel_', '_heilbar_', '_mutterland_', '_banane_', '_gesichtarf_', '_holz_']
+simulate_experiments DEBUG:word freq dict (first 20): 
+{'_akzep_': 0.477, '_ich_': 5.969, '_sie_': 5.753, '_das_': 5.713, '_du_': 5.705, '_ist_': 5.705, '_nicht_': 5.647, '_die_': 5.613, '_es_': 5.577, '_und_': 5.565, '_der_': 5.456, '_wir_': 5.448, '_was_': 5.448, '_zu_': 5.369, '_ein_': 5.339, '_er_': 5.332, '_in_': 5.311, '_mir_': 5.221, '_mit_': 5.214, '_ja_': 5.182}
+simulate_experiments DEBUG:['steter_', 'sendes_', 'nderen_', 'tst_', 'nert_', 'ensen_', 'nent_', 'lerin_', 'est_', 'teres_', 'ene_', 'sems_', 'sente_', 'ets_', 'tere_', 'sense_', 'tenten_', 'nds_', 'ik_', 'gemäß_', 'te_', 'nisse_', 'erse_', 'bar_', 'sends_', 'tses_', 'sel_', 'eme_', 'endetet_', 'sts_', 'tente_', 'keit_', 'emse_', 'ersen_', 'wert_', 'ste_', 'erner_', 'lich_', 'ertem_', 'eten_', 'är_', 'malig_', 'mal_', 'nes_', 'stender_', 'iv_', 'ndert_', 'ernstes_', 'sere_', 'endend_', 'tum_', 'nenen_', 'erlin_', 'estern_', 'stens_', 'nde_', 'ität_', 'ler_', 'ling_', 'emer_', 'enst_', 'nten_', 'nete_', 'ungen_', 'endest_', 'sternes_', 'ernen_', 'liches_', 'teste_', 'keiten_', 'serer_', 'igkeiten_', 'ator_', 'es_', 'nte_', 'sester_', 'wesen_', 'tet_', 'unger_', 'emst_', 'nets_', 'emser_', 'ismus_', 'igkeit_', 'tse_', 'se_', 'arm_', 'ernes_', 'heit_', 'nene_', 'set_', 'senders_', 'et_', 'erens_', 'nems_', 'ndem_', 'kunde_', 'seme_', 'erts_', 'ischer_', 'erne_', 'tents_', 'sem_', 'ernster_', 'teme_', 'frei_', 'nemen_', 'ernst_', 'ende_', 'ters_', 'nest_', 'eser_', 'serner_', 'testen_', 'antin_', 'em_', 'end_', 'haft_', 'tender_', 'ers_', 'terem_', 's_', 'teten_', 'teren_', 'ser_', 'stes_', 'ten_', 'istin_', 'endendes_', 'erei_', 'enen_', 'ends_', 'stem_', 'esterer_', 'iges_', 'enten_', 'enste_', 'ernter_', 'tät_', 'erlei_', 'ens_', 'nester_', 'nen_', 'tsen_', 'nt_', 'ese_', 'tenes_', 'mäßig_', 'enem_', 'sene_', 'lichem_', 'ische_', 'iks_', 'nis_', 'eset_', 'ungern_', 'erstem_', 'entner_', 'ne_', 'terner_', 'lein_', 'endes_', 'sorte_', 'stere_', 'enet_', 'sendenden_', 'endert_', 'nts_', 'tenden_', 'ere_', 'stern_', 'test_', 'stetem_', 'nere_', 'erte_', 'eur_', 'schaft_', 'stems_', 'ersten_', 'net_', 'stet_', 'sternen_', 'endender_', 'entin_', 'art_', 'sern_', 'nese_', 'ernt_', 'entern_', 'erst_', 'tenere_', 'euse_', 'ete_', 'esters_', 'testens_', 'heiten_', 'lichkeit_', 'steten_', 'eter_', 'ses_', 'sener_', 'sent_', 'tende_', 'eres_', 'igen_', 'ernstem_', 'ent_', 'ig_', 'sendern_', 'ndern_', 'nd_', 'enders_', 'los_', 'emers_', 'stent_', 'senter_', 'isches_', 'ter_', 'liche_', 'nem_', 'ner_', 'stetes_', 'ns_', 'ant_', 'tester_', 'ernte_', 'tern_', 'erem_', 'nden_', 'endende_', 'seren_', 'nse_', 'tert_', 'iger_', 'erster_', 'sens_', 't_', 'st_', 'ender_', 'chen_', 'artig_', 'ert_', 'enser_', 'ners_', 'lichen_', 'fach_', 'ener_', 'nesen_', 'endet_', 'enden_', 'sterner_', 'sterns_', 'nder_', 'ester_', 'tests_', 'nern_', 'isch_', 'erns_', 'sende_', 'tene_', 'neme_', 'senden_', 'licher_', 'nst_', 'ernten_', 'tement_', 'enters_', 'ster_', 'nser_', 'tes_', 'sal_', 'ndere_', 'ige_', 'igsten_', 'ems_', 'ternes_', 'erstern_', 'igem_', 'stenden_', 'sam_', 'erlich_', 'sert_', 'tent_', 'teter_', 'enter_', 'estes_', 'nste_', 'voll_', 'stenen_', 'endeten_', 'send_', 'ement_', 'ndet_', 'stende_', 'nestes_', 'tenter_', 'esens_', 'endete_', 'endern_', 'stene_', 'emen_', 'sterne_', 'semester_', 'sten_', 'sender_', 'enes_', 'ist_', 'ernsten_', 'enderes_', 'würdig_', 'emt_', 'ischen_', 'nestern_', 'semen_', 'seres_', 'erstes_', 'ts_', 'entente_', 'emster_', 'orin_', 'enster_', 'reich_', 'ung_', 'erste_', 'este_', 'ernste_', 'leer_', 'iker_', 'tem_', 'sendende_', 'erten_', 'senen_', 'neter_', 'er_', 'etes_', 'ense_', 'ologie_', 'ern_', 'testes_', 'stete_', 'tems_', 'nter_', 'ents_', 'sen_', 'senem_', 'ndt_', 'igers_', 'erer_', 'igern_', 'neres_', 'ernest_', 'or_', 'stert_', 'senes_', 'esten_', 'nende_', 'unge_', 'ente_', 'erin_', 'sers_', 'iken_', 'sets_', 'zeug_', 'öse_', 'tete_', 'tens_', 'tend_', 'endenden_', 'emes_', 'terne_', 'lichkeiten_', 'eren_', 'esen_', 'e_', 'n_', 'en_', 'erter_', 'tener_', 'etem_']
+simulate_experiments DEBUG:word freq dict (with affixes): {'_akzep_': 0.477, '_ich_': 5.969, '_sie_': 5.753, '_das_': 5.713, '_du_': 5.705, '_ist_': 5.705, '_nicht_': 5.647, '_die_': 5.613, '_es_': 5.577, '_und_': 5.565, '_der_': 5.456, '_wir_': 5.448, '_was_': 5.448, '_zu_': 5.369, '_ein_': 5.339, '_er_': 5.332, '_in_': 5.311, '_mir_': 5.221, '_mit_': 5.214, '_ja_': 5.182, '_wie_': 5.181, '_den_': 5.181, '_mich_': 5.161, '_auf_': 5.157, '_dass_': 5.151, '_eine_': 5.132, '_so_': 5.129, '_aber_': 5.126, '_hier_': 5.109, '_hat_': 5.088, '_sind_': 5.072, '_dich_': 5.069, '_von_': 5.067, '_haben_': 5.065, '_für_': 5.065, '_wenn_': 5.06, '_war_': 5.05, '_an_': 5.01, '_habe_': 4.982, '_bin_': 4.977, '_nur_': 4.971, '_da_': 4.97, '_nein_': 4.969, '_noch_': 4.969, '_dir_': 4.968, '_ihr_': 4.961, '_hast_': 4.939, '_einen_': 4.93, '_uns_': 4.928, '_sich_': 4.923, '_dem_': 4.883, '_kann_': 4.876, '_auch_': 4.866, '_gut_': 4.858, '_schon_': 4.856, '_sein_': 4.854, '_jetzt_': 4.851, '_aus_': 4.851, '_ihn_': 4.848, '_als_': 4.848, '_dann_': 4.844, '_mal_': 4.839, '_bist_': 4.835, '_um_': 4.829, '_meine_': 4.826, '_wird_': 4.814, '_im_': 4.806, '_doch_': 4.795, '_mein_': 4.792, '_alles_': 4.769, '_weiß_': 4.759, '_keine_': 4.757, '_oder_': 4.735, '_nach_': 4.714, '_man_': 4.713, '_werden_': 4.7, '_wo_': 4.687, '_nichts_': 4.687, '_muss_': 4.681, '_oh_': 4.674, '_will_': 4.663, '_also_': 4.663, '_mehr_': 4.661, '_etwas_': 4.659, '_immer_': 4.641, '_warum_': 4.637, '_bei_': 4.633, '_hab_': 4.621, '_bitte_': 4.616, '_wieder_': 4.613, '_ihnen_': 4.606, '_los_': 4.605, '_machen_': 4.59, '_diese_': 4.589, '_vor_': 4.588, '_können_': 4.58, '_alle_': 4.573, '_sagen_': 4.569, '_zum_': 4.568, '_sehr_': 4.563, '_gehen_': 4.563, '_denn_': 4.561, '_geht_': 4.548, '_sehen_': 4.547, '_tun_': 4.547, '_mann_': 4.544, '_euch_': 4.538, '_wer_': 4.537, '_ihm_': 4.535, '_einem_': 4.533, '_wirklich_': 4.53, '_werde_': 4.527, '_einer_': 4.524, '_deine_': 4.518, '_danke_': 4.512, '_über_': 4.503, '_komm_': 4.498, '_vielleicht_': 4.497, '_einfach_': 4.48, '_soll_': 4.477, '_müssen_': 4.471, '_weg_': 4.468, '_nie_': 4.467, '_kein_': 4.464, '_wissen_': 4.464, '_gibt_': 4.463, '_des_': 4.46, '_hey_': 4.454, '_tut_': 4.45, '_leben_': 4.442, '_willst_': 4.438, '_okay_': 4.437, '_würde_': 4.436, '_viel_': 4.436, '_zeit_': 4.435, '_weil_': 4.435, '_dein_': 4.425, '_am_': 4.418, '_weißt_': 4.41, '_hatte_': 4.408, '_dieser_': 4.407, '_nun_': 4.402, '_kommt_': 4.398, '_ok_': 4.395, '_kommen_': 4.392, '_kannst_': 4.391, '_zurück_': 4.388, '_heute_': 4.388, '_damit_': 4.384, '_ganz_': 4.381, '_ihre_': 4.373, '_gesagt_': 4.371, '_macht_': 4.365, '_wurde_': 4.364, '_leid_': 4.362, '_bis_': 4.359, '_wollen_': 4.353, '_wäre_': 4.35, '_wollte_': 4.349, '_sicher_': 4.344, '_frau_': 4.338, '_lch_': 4.323, '_lass_': 4.32, '_gott_': 4.32, '_meinen_': 4.319, '_lassen_': 4.316, '_na_': 4.31, '_leute_': 4.305, '_genau_': 4.296, '_seine_': 4.292, '_zur_': 4.28, '_zwei_': 4.275, '_hätte_': 4.272, '_hallo_': 4.269, '_könnte_': 4.265, '_mr_': 4.26, '_waren_': 4.257, '_klar_': 4.244, '_ab_': 4.242, '_gerade_': 4.237, '_glaube_': 4.226, '_vater_': 4.221, '_sollte_': 4.22, '_gesehen_': 4.22, '_tag_': 4.218, '_morgen_': 4.218, '_durch_': 4.218, '_dieses_': 4.215, '_raus_': 4.215, '_geld_': 4.213, '_gemacht_': 4.21, '_schön_': 4.206, '_liebe_': 4.205, '_sir_': 4.203, '_musst_': 4.2, '_keinen_': 4.199, '_reden_': 4.199, '_sagte_': 4.199, '_lhr_': 4.197, '_diesen_': 4.195, '_jemand_': 4.195, '_wohl_': 4.195, '_unsere_': 4.193, '_ob_': 4.189, '_wirst_': 4.186, '_mach_': 4.184, '_paar_': 4.177, '_passiert_': 4.177, '_besser_': 4.175, '_hör_': 4.175, '_anderen_': 4.17, '_dachte_': 4.169, '_selbst_': 4.164, '_gehört_': 4.161, '_mutter_': 4.16, '_möchte_': 4.158, '_wieso_': 4.156, '_ohne_': 4.155, '_her_': 4.15, '_sag_': 4.149, '_meiner_': 4.147, '_richtig_': 4.142, '_ordnung_': 4.138, '_lange_': 4.134, '_helfen_': 4.13, '_dort_': 4.13, '_geben_': 4.129, '_geh_': 4.128, '_sieht_': 4.128, '_meinem_': 4.124, '_diesem_': 4.124, '_sei_': 4.121, '_finden_': 4.119, '_sagt_': 4.117, '_gar_': 4.116, '_weiter_': 4.115, '_gleich_': 4.111, '_gute_': 4.103, '_vom_': 4.102, '_denke_': 4.098, '_nacht_': 4.096, '_warte_': 4.093, '_ach_': 4.093, '_deinen_': 4.091, '_ins_': 4.089, '_natürlich_': 4.083, '_welt_': 4.082, '_davon_': 4.081, '_hören_': 4.08, '_hin_': 4.079, '_mädchen_': 4.078, '_seit_': 4.075, '_viele_': 4.074, '_sollten_': 4.074, '_dafür_': 4.071, '_machst_': 4.07, '_sollen_': 4.067, '_recht_': 4.067, '_zusammen_': 4.063, '_schnell_': 4.061, '_hause_': 4.059, '_wegen_': 4.059, '_menschen_': 4.058, '_essen_': 4.047, '_bleiben_': 4.047, '_unser_': 4.042, '_ganze_': 4.04, '_habt_': 4.039, '_angst_': 4.038, '_freund_': 4.037, '_tot_': 4.034, '_scheiße_': 4.029, '_andere_': 4.028, '_unter_': 4.027, '_drei_': 4.025, '_bringen_': 4.017, '_rein_': 4.017, '_haus_': 4.014, '_nehmen_': 4.011, "_geht's_": 4.009, '_eines_': 4.008, '_seid_': 4.002, '_genug_': 4.001, '_brauchen_': 4.001, '_getan_': 3.999, '_dabei_': 3.997, '_verdammt_': 3.996, '_moment_': 3.996, '_stimmt_': 3.991, '_arbeit_': 3.986, '_kinder_': 3.986, '_heißt_': 3.984, '_problem_': 3.983, '_erst_': 3.982, '_guten_': 3.981, '_gegen_': 3.981, '_herr_': 3.979, '_jack_': 3.977, '_sofort_': 3.974, '_glauben_': 3.974, '_darf_': 3.974, '_ihren_': 3.974, '_abend_': 3.973, '_hatten_': 3.966, '_fertig_': 3.963, '_niemand_': 3.963, '_warten_': 3.963, '_sonst_': 3.96, '_halt_': 3.96, '_jeder_': 3.96, '_steht_': 3.958, '_einmal_': 3.954, '_bevor_': 3.953, '_eigentlich_': 3.951, '_junge_': 3.951, '_jahre_': 3.95, '_brauche_': 3.95, '_fragen_': 3.949, '_bruder_': 3.945, '_sache_': 3.943, '_beim_': 3.942, '_mag_': 3.941, '_sohn_': 3.939, '_siehst_': 3.931, '_konnte_': 3.931, '_halten_': 3.927, '_warst_': 3.927, '_sprechen_': 3.926, '_gib_': 3.925, '_daran_': 3.919, '_baby_': 3.916, '_sterben_': 3.915, '_hilfe_': 3.914, '_darüber_': 3.914, '_wann_': 3.913, '_kam_': 3.913, '_kopf_': 3.912, '_familie_': 3.911, '_deiner_': 3.909, '_gefunden_': 3.908, '_deinem_': 3.908, '_kennen_': 3.907, '_wusste_': 3.906, '_he_': 3.903, '_sieh_': 3.903, '_dazu_': 3.9, '_vergessen_': 3.9, '_später_': 3.899, '_könnten_': 3.899, '_seinen_': 3.897, '_lhre_': 3.897, '_kind_': 3.892, '_jahren_': 3.892, '_egal_': 3.891, '_allein_': 3.89, '_minuten_': 3.889, '_stadt_': 3.887, '_töten_': 3.887, '_ende_': 3.885, '_bisschen_': 3.884, '_beide_': 3.884, '_denken_': 3.881, '_toll_': 3.88, '_gern_': 3.879, '_verstehe_': 3.879, '_würden_': 3.877, '_dinge_': 3.875, '_dank_': 3.875, '_frage_': 3.874, '_jeden_': 3.874, '_wahr_': 3.871, '_gab_': 3.871, '_namen_': 3.87, '_lieber_': 3.866, '_all_': 3.865, '_hi_': 3.865, '_letzte_': 3.864, '_bekommen_': 3.862, '_runter_': 3.861, '_männer_': 3.861, '_kleine_': 3.857, '_eins_': 3.855, '_komme_': 3.851, '_augen_': 3.851, '_sehe_': 3.85, '_freunde_': 3.849, '_glück_': 3.848, '_jungs_': 3.848, '_mache_': 3.847, '_darauf_': 3.846, '_sage_': 3.845, '_gehe_': 3.844, '_meinst_': 3.84, '_auto_': 3.839, '_dr_': 3.837, '_uhr_': 3.836, '_weit_': 3.835, '_art_': 3.833, '_bald_': 3.833, '_film_': 3.831, '_fall_': 3.831, '_draußen_': 3.83, '_teufel_': 3.83, '_fahren_': 3.829, '_bereit_': 3.827, '_hört_': 3.826, '_dad_': 3.824, '_einzige_': 3.824, '_eure_': 3.823, '_echt_': 3.82, '_vorbei_': 3.819, '_solltest_': 3.818, '_verrückt_': 3.817, '_ganzen_': 3.816, '_musik_': 3.816, '_vielen_': 3.815, '_drin_': 3.811, '_tür_': 3.808, '_hinter_': 3.807, '_name_': 3.807, '_stehen_': 3.804, '_treffen_': 3.804, '_sogar_': 3.801, '_denkst_': 3.801, '_verstanden_': 3.8, '_etwa_': 3.8, '_nimm_': 3.8, '_spielen_': 3.799, '_ihrer_': 3.799, '_ruhig_': 3.796, '_wurden_': 3.796, '_fast_': 3.796, '_arbeiten_': 3.795, '_kenne_': 3.795, '_dran_': 3.795, '_sorgen_': 3.792, '_hätten_': 3.79, '_lang_': 3.788, '_verloren_': 3.788, '_jemanden_': 3.788, '_seiner_': 3.787, '_kerl_': 3.786, '_deshalb_': 3.785, '_john_': 3.785, '_job_': 3.784, '_ziemlich_': 3.784, '_ahnung_': 3.783, '_darum_': 3.783, '_grund_': 3.78, '_äh_': 3.779, '_lasst_': 3.777, '_überhaupt_': 3.772, '_hand_': 3.772, '_neue_': 3.772, '_finde_': 3.771, '_schau_': 3.769, '_je_': 3.768, '_musste_': 3.768, '_woher_': 3.765, '_frauen_': 3.764, '_idee_': 3.764, '_ihrem_': 3.764, '_große_': 3.763, '_land_': 3.762, '_liegt_': 3.761, '_typ_': 3.76, '_spät_': 3.759, '_sah_': 3.758, '_gekommen_': 3.754, '_geschichte_': 3.754, '_wasser_': 3.752, '_schwester_': 3.752, '_seinem_': 3.75, '_spiel_': 3.75, '_niemals_': 3.749, '_wenig_': 3.749, '_mom_': 3.748, '_versucht_': 3.748, '_anders_': 3.748, '_seite_': 3.748, '_kommst_': 3.747, '_spaß_': 3.746, '_ruhe_': 3.745, '_keiner_': 3.745, '_ging_': 3.744, '_verstehen_': 3.744, '_kurz_': 3.744, '_endlich_': 3.744, '_gerne_': 3.743, '_welche_': 3.742, '_braucht_': 3.742, '_erste_': 3.742, '_versuchen_': 3.741, '_bestimmt_': 3.741, '_lässt_': 3.738, '_tochter_': 3.736, '_jahr_': 3.735, '_nett_': 3.733, '_hoch_': 3.732, '_bringt_': 3.731, '_sagst_': 3.73, 'steter_': 2.89, 'sendes_': 1.1, 'nderen_': 1.04, 'tst_': 2.3, 'nert_': 1.05, 'ensen_': 1.62, 'nent_': 1.06, 'lerin_': 1.87, 'est_': 4.03, 'teres_': 1.82, 'ene_': 3.07, 'sems_': 1.51, 'sente_': 1.57, 'ets_': 2.72, 'tere_': 1.92, 'sense_': 3.51, 'tenten_': 1.67, 'nds_': 2.99, 'ik_': 3.4, 'gemäß_': 4.59, 'te_': 4.01, 'nisse_': 2.42, 'erse_': 1.72, 'bar_': 4.55, 'sends_': 1.84, 'tses_': 1.05, 'sel_': 3.16, 'eme_': 2.13, 'endetet_': 1.17, 'sts_': 2.93, 'tente_': 1.97, 'keit_': 2.47, 'emse_': 1.06, 'ersen_': 1.52, 'wert_': 5.19, 'ste_': 3.27, 'erner_': 1.84, 'lich_': 3.47, 'ertem_': 1.13, 'eten_': 1.54, 'är_': 2.71, 'malig_': 1.22, 'mal_': 6.28, 'nes_': 3.2, 'stender_': 2.07, 'iv_': 4.71, 'ndert_': 1.75, 'ernstes_': 3.78, 'sere_': 1.71, 'endend_': 2.37, 'tum_': 3.19, 'nenen_': 2.23, 'erlin_': 1.1, 'estern_': 2.07, 'stens_': 1.79, 'nde_': 2.44, 'ität_': 1.21, 'ler_': 3.49, 'ling_': 3.24, 'emer_': 1.88, 'enst_': 1.34, 'nten_': 1.11, 'nete_': 1.86, 'ungen_': 1.94, 'endest_': 2.34, 'sternes_': 2.06, 'ernen_': 1.9, 'liches_': 1.97, 'teste_': 3.31, 'keiten_': 2.12, 'serer_': 1.68, 'igkeiten_': 1.14, 'ator_': 1.64, 'es_': 6.94, 'nte_': 1.86, 'sester_': 1.79, 'wesen_': 4.42, 'tet_': 2.74, 'unger_': 3.39, 'emst_': 1.87, 'nets_': 2.43, 'emser_': 2.61, 'ismus_': 2.46, 'igkeit_': 1.48, 'tse_': 2.91, 'se_': 4.47, 'arm_': 4.74, 'ernes_': 1.18, 'heit_': 3.06, 'nene_': 3.26, 'set_': 4.3, 'senders_': 3.58, 'et_': 4.77, 'erens_': 1.42, 'nems_': 1.07, 'ndem_': 1.32, 'kunde_': 4.44, 'seme_': 2.01, 'erts_': 1.14, 'ischer_': 1.64, 'erne_': 2.53, 'tents_': 1.28, 'sem_': 3.18, 'ernster_': 3.5, 'teme_': 1.46, 'frei_': 5.2, 'nemen_': 1.98, 'ernst_': 5.21, 'ende_': 5.67, 'ters_': 1.67, 'nest_': 3.91, 'eser_': 2.52, 'serner_': 1.79, 'testen_': 4.37, 'antin_': 1.61, 'em_': 4.4, 'end_': 4.2, 'haft_': 4.33, 'tender_': 2.85, 'ers_': 3.34, 'terem_': 1.25, 's_': 5.74, 'teten_': 1.34, 'teren_': 1.62, 'ser_': 3.52, 'stes_': 1.5, 'ten_': 4.03, 'istin_': 1.34, 'endendes_': 1.67, 'erei_': 1.69, 'enen_': 2.41, 'ends_': 2.81, 'stem_': 2.66, 'esterer_': 1.34, 'iges_': 2.57, 'enten_': 3.58, 'enste_': 1.67, 'ernter_': 1.29, 'tät_': 2.97, 'erlei_': 1.32, 'ens_': 2.79, 'nester_': 3.22, 'nen_': 5.02, 'tsen_': 1.31, 'nt_': 3.5, 'ese_': 2.53, 'tenes_': 1.11, 'mäßig_': 3.91, 'enem_': 1.81, 'sene_': 2.16, 'lichem_': 1.52, 'ische_': 2.61, 'iks_': 2.3, 'nis_': 2.83, 'eset_': 2.35, 'ungern_': 3.92, 'erstem_': 3.47, 'entner_': 1.4, 'ne_': 5.45, 'terner_': 1.31, 'lein_': 2.81, 'endes_': 3.73, 'sorte_': 4.05, 'stere_': 1.26, 'enet_': 1.16, 'sendenden_': 1.83, 'endert_': 2.05, 'nts_': 2.14, 'tenden_': 1.1, 'ere_': 2.69, 'stern_': 4.5, 'test_': 4.74, 'stetem_': 1.97, 'nere_': 1.75, 'erte_': 1.9, 'eur_': 4.47, 'schaft_': 3.5, 'stems_': 1.4, 'ersten_': 5.76, 'net_': 4.32, 'stet_': 2.18, 'sternen_': 4.0, 'endender_': 1.87, 'entin_': 1.37, 'art_': 5.51, 'sern_': 1.37, 'nese_': 1.9, 'ernt_': 1.23, 'entern_': 2.76, 'erst_': 5.76, 'tenere_': 1.71, 'euse_': 1.48, 'ete_': 1.92, 'esters_': 2.06, 'testens_': 1.66, 'heiten_': 1.82, 'lichkeit_': 1.82, 'steten_': 2.82, 'eter_': 1.41, 'ses_': 3.25, 'sener_': 2.0, 'sent_': 2.85, 'tende_': 1.8, 'eres_': 2.46, 'igen_': 3.01, 'ernstem_': 2.48, 'ent_': 3.33, 'ig_': 4.1, 'sendern_': 3.33, 'ndern_': 2.21, 'nd_': 3.94, 'enders_': 3.05, 'los_': 5.26, 'emers_': 1.08, 'stent_': 2.34, 'senter_': 1.19, 'isches_': 1.65, 'ter_': 3.71, 'liche_': 2.5, 'nem_': 4.62, 'ner_': 4.5, 'stetes_': 2.25, 'ns_': 4.26, 'ant_': 3.16, 'tester_': 3.35, 'ernte_': 3.98, 'tern_': 2.26, 'erem_': 1.06, 'nden_': 2.42, 'endende_': 2.71, 'seren_': 2.17, 'nse_': 1.95, 'tert_': 2.44, 'iger_': 3.01, 'erster_': 5.05, 'sens_': 2.95, 't_': 5.19, 'st_': 5.12, 'ender_': 2.89, 'chen_': 3.74, 'artig_': 3.4, 'ert_': 2.59, 'enser_': 1.41, 'ners_': 1.04, 'lichen_': 3.05, 'fach_': 4.37, 'ener_': 2.34, 'nesen_': 1.27, 'endet_': 4.55, 'enden_': 4.4, 'sterner_': 1.98, 'sterns_': 3.02, 'nder_': 2.04, 'ester_': 3.07, 'tests_': 4.32, 'nern_': 1.58, 'isch_': 3.42, 'erns_': 1.49, 'sende_': 3.55, 'tene_': 1.31, 'neme_': 1.12, 'senden_': 4.28, 'licher_': 2.55, 'nst_': 1.78, 'ernten_': 3.71, 'tement_': 1.1, 'enters_': 1.53, 'ster_': 2.65, 'nser_': 1.06, 'tes_': 2.92, 'sal_': 3.4, 'ndere_': 1.6, 'ige_': 3.38, 'igsten_': 1.13, 'ems_': 3.67, 'ternes_': 1.88, 'erstern_': 1.69, 'igem_': 2.04, 'stenden_': 1.6, 'sam_': 4.18, 'erlich_': 2.66, 'sert_': 1.91, 'tent_': 2.27, 'teter_': 1.18, 'enter_': 3.21, 'estes_': 2.36, 'nste_': 1.07, 'voll_': 5.17, 'stenen_': 1.29, 'endeten_': 3.3, 'send_': 3.14, 'ement_': 1.18, 'ndet_': 1.99, 'stende_': 1.18, 'nestes_': 2.3, 'tenter_': 1.53, 'esens_': 2.58, 'endete_': 4.17, 'endern_': 1.11, 'stene_': 1.41, 'emen_': 1.18, 'sterne_': 4.44, 'semester_': 4.03, 'sten_': 3.03, 'sender_': 4.49, 'enes_': 2.75, 'ist_': 7.08, 'ernsten_': 3.5, 'enderes_': 1.14, 'würdig_': 3.73, 'emt_': 2.22, 'ischen_': 2.48, 'nestern_': 2.71, 'semen_': 2.13, 'seres_': 1.58, 'erstes_': 4.75, 'ts_': 3.85, 'entente_': 2.97, 'emster_': 1.09, 'orin_': 1.82, 'enster_': 1.07, 'reich_': 4.93, 'ung_': 3.11, 'erste_': 5.57, 'este_': 3.13, 'ernste_': 3.78, 'leer_': 4.6, 'iker_': 2.03, 'tem_': 2.57, 'sendende_': 1.66, 'erten_': 1.82, 'senen_': 1.97, 'neter_': 1.24, 'er_': 6.71, 'etes_': 1.28, 'ense_': 2.63, 'ologie_': 1.3, 'ern_': 3.22, 'testes_': 1.98, 'stete_': 2.77, 'tems_': 1.31, 'nter_': 1.65, 'ents_': 2.45, 'sen_': 3.65, 'senem_': 1.5, 'ndt_': 1.78, 'igers_': 1.11, 'erer_': 1.95, 'igern_': 1.15, 'neres_': 1.07, 'ernest_': 3.24, 'or_': 4.4, 'stert_': 1.46, 'senes_': 1.61, 'esten_': 2.78, 'nende_': 1.83, 'unge_': 2.98, 'ente_': 3.78, 'erin_': 3.08, 'sers_': 1.84, 'iken_': 1.73, 'sets_': 3.4, 'zeug_': 4.56, 'öse_': 2.74, 'tete_': 2.49, 'tens_': 2.24, 'tend_': 2.11, 'endenden_': 2.82, 'emes_': 1.64, 'terne_': 1.38, 'lichkeiten_': 1.5, 'eren_': 3.0, 'esen_': 2.12, 'e_': 5.53, 'n_': 5.4, 'en_': 4.86, 'erter_': 1.26, 'tener_': 1.72, 'etem_': 1.27}
+simulate_experiments INFO:max freq:7.08
+simulate_experiments INFO:Length text: 9
+simulate_experiments INFO:LENGTH of freq dict: 880
+simulate_experiments INFO:LENGTH of individual words: 9
+simulate_experiments DEBUG:size lexicon: 887
+simulate_experiments INFO:Amount of words in lexicon: 887
+simulate_experiments INFO:Amount of words in text:9
+simulate_experiments INFO:Setting up word-to-word inhibition grid...
+simulate_experiments INFO:
+ Building new inhibition matrix 
+
+simulate_experiments INFO:Inhibition grid ready. BEGIN EXPERIMENT
+simulate_experiments INFO:trial: 1
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: akzeptabel
+simulate_experiments DEBUG:['_a', 'ak', 'az', 'ae', 'kz', 'ke', 'kp', 'ze', 'zp', 'zt', 'ep', 'et', 'ea', 'pt', 'pa', 'pb', 'ta', 'tb', 'te', 'ab', 'al', 'be', 'bl', 'el', 'l_']
+simulate_experiments DEBUG:bigram activity per cycle: 3.7615321458240114
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.20849711]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0.22314440958147244
+simulate_experiments DEBUG:total activity: 16.409799323176458
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: akzeptabel
+simulate_experiments DEBUG:['_a', 'ak', 'az', 'ae', 'kz', 'ke', 'kp', 'ze', 'zp', 'zt', 'ep', 'et', 'ea', 'pt', 'pa', 'pb', 'ta', 'tb', 'te', 'ab', 'al', 'be', 'bl', 'el', 'l_']
+simulate_experiments DEBUG:bigram activity per cycle: 3.7615321458240114
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.33579567]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0.3726613913750664
+simulate_experiments DEBUG:total activity: 28.905873263669566
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: akzep
+simulate_experiments DEBUG:['_a', 'ak', 'az', 'ae', 'kz', 'ke', 'kp', 'ze', 'zp', 'ep', 'p_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.48692332]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0.4869233163008048
+simulate_experiments DEBUG:total activity: 28.393504085467164
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: akzep
+simulate_experiments DEBUG:['_a', 'ak', 'az', 'ae', 'kz', 'ke', 'kp', 'ze', 'zp', 'ep', 'p_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.59698783]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0.5969878261835438
+simulate_experiments DEBUG:total activity: 27.661283304784188
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: akzep
+simulate_experiments DEBUG:['_a', 'ak', 'az', 'ae', 'kz', 'ke', 'kp', 'ze', 'zp', 'ep', 'p_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.68110194]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0.6811019443285232
+simulate_experiments DEBUG:total activity: 27.147492466816125
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: akzep
+simulate_experiments DEBUG:['_a', 'ak', 'az', 'ae', 'kz', 'ke', 'kp', 'ze', 'zp', 'ep', 'p_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.74822104]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0.7482210356267331
+simulate_experiments DEBUG:total activity: 26.70344617479121
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: akzep
+simulate_experiments DEBUG:['_a', 'ak', 'az', 'ae', 'kz', 'ke', 'kp', 'ze', 'zp', 'ep', 'p_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.80361448]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0.803614484631269
+simulate_experiments DEBUG:total activity: 26.344324789861208
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: akzep
+simulate_experiments DEBUG:['_a', 'ak', 'az', 'ae', 'kz', 'ke', 'kp', 'ze', 'zp', 'ep', 'p_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.8503839]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0.8503838964439719
+simulate_experiments DEBUG:total activity: 26.068210512084423
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: akzep
+simulate_experiments DEBUG:['_a', 'ak', 'az', 'ae', 'kz', 'ke', 'kp', 'ze', 'zp', 'ep', 'p_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.89033873]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0.890338731377736
+simulate_experiments DEBUG:total activity: 25.825395181815786
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: akzep
+simulate_experiments DEBUG:['_a', 'ak', 'az', 'ae', 'kz', 'ke', 'kp', 'ze', 'zp', 'ep', 'p_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.9244932]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0.9244932049826606
+simulate_experiments DEBUG:total activity: 25.57437391306487
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: akzep
+simulate_experiments DEBUG:['_a', 'ak', 'az', 'ae', 'kz', 'ke', 'kp', 'ze', 'zp', 'ep', 'p_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.95335727]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0.9533572745311225
+simulate_experiments DEBUG:total activity: 25.29695304559283
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: akzep
+simulate_experiments DEBUG:['_a', 'ak', 'az', 'ae', 'kz', 'ke', 'kp', 'ze', 'zp', 'ep', 'p_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.97711221]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0.9771122072639853
+simulate_experiments DEBUG:total activity: 25.070047013453824
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 1
+simulate_experiments DEBUG:recognized words ['_akzep_']
+simulate_experiments INFO:word akzep matched in slot 0
+simulate_experiments INFO:matched word is target word
+simulate_experiments INFO:reaction time: 575 ms
+simulate_experiments INFO:end of trial 
+
+simulate_experiments INFO:trial: 2
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: heilbar
+simulate_experiments DEBUG:['_h', 'he', 'hi', 'hl', 'ei', 'el', 'eb', 'il', 'ib', 'ia', 'lb', 'la', 'lr', 'ba', 'br', 'ar', 'r_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0.2529246691386654
+simulate_experiments DEBUG:total activity: 12.231389316778545
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: heilbar
+simulate_experiments DEBUG:['_h', 'he', 'hi', 'hl', 'ei', 'el', 'eb', 'il', 'ib', 'ia', 'lb', 'la', 'lr', 'ba', 'br', 'ar', 'r_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0.4266252327906161
+simulate_experiments DEBUG:total activity: 20.64468383384125
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: akzep
+simulate_experiments DEBUG:['_a', 'ak', 'az', 'ae', 'kz', 'ke', 'kp', 'ze', 'zp', 'ep', 'p_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.29838771]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0.29838770530941267
+simulate_experiments DEBUG:total activity: 21.4540929588869
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: akzep
+simulate_experiments DEBUG:['_a', 'ak', 'az', 'ae', 'kz', 'ke', 'kp', 'ze', 'zp', 'ep', 'p_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.50087929]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0.5008792896054712
+simulate_experiments DEBUG:total activity: 21.666375143359865
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: akzep
+simulate_experiments DEBUG:['_a', 'ak', 'az', 'ae', 'kz', 'ke', 'kp', 'ze', 'zp', 'ep', 'p_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.63981837]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0.6398183702401804
+simulate_experiments DEBUG:total activity: 21.52000837010814
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: akzep
+simulate_experiments DEBUG:['_a', 'ak', 'az', 'ae', 'kz', 'ke', 'kp', 'ze', 'zp', 'ep', 'p_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.73888618]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0.738886180792186
+simulate_experiments DEBUG:total activity: 21.29380458840556
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: akzep
+simulate_experiments DEBUG:['_a', 'ak', 'az', 'ae', 'kz', 'ke', 'kp', 'ze', 'zp', 'ep', 'p_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.81248349]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0.8124834949928486
+simulate_experiments DEBUG:total activity: 20.976985677045256
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: akzep
+simulate_experiments DEBUG:['_a', 'ak', 'az', 'ae', 'kz', 'ke', 'kp', 'ze', 'zp', 'ep', 'p_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.86893411]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0.8689341060636303
+simulate_experiments DEBUG:total activity: 20.68360085503579
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: akzep
+simulate_experiments DEBUG:['_a', 'ak', 'az', 'ae', 'kz', 'ke', 'kp', 'ze', 'zp', 'ep', 'p_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.91304902]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0.9130490163378303
+simulate_experiments DEBUG:total activity: 20.45234459075681
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: akzep
+simulate_experiments DEBUG:['_a', 'ak', 'az', 'ae', 'kz', 'ke', 'kp', 'ze', 'zp', 'ep', 'p_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.94764865]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0.9476486503955648
+simulate_experiments DEBUG:total activity: 20.30762397855465
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: akzep
+simulate_experiments DEBUG:['_a', 'ak', 'az', 'ae', 'kz', 'ke', 'kp', 'ze', 'zp', 'ep', 'p_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[0]
+simulate_experiments DEBUG:target activity:[0.97388448]
+simulate_experiments DEBUG:target threshold:[0.97305085]
+simulate_experiments DEBUG:stimulus activity:0.973884478913
+simulate_experiments DEBUG:total activity: 20.205400879587167
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 1
+simulate_experiments DEBUG:recognized words ['_akzep_']
+simulate_experiments INFO:word akzep matched in slot 0
+simulate_experiments INFO:matched word is target word
+simulate_experiments INFO:reaction time: 550 ms
+simulate_experiments INFO:end of trial 
+
+simulate_experiments INFO:trial: 3
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: mutterland
+simulate_experiments DEBUG:['_m', 'mu', 'mt', 'ut', 'ue', 'tt', 'te', 'tr', 'tl', 'er', 'el', 'ea', 'rl', 'ra', 'rn', 'la', 'ln', 'ld', 'an', 'ad', 'nd', 'd_']
+simulate_experiments DEBUG:bigram activity per cycle: 3.761532145824012
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.23307207]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0.23786478984386208
+simulate_experiments DEBUG:total activity: 26.99948020683059
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: mutterland
+simulate_experiments DEBUG:['_m', 'mu', 'mt', 'ut', 'ue', 'tt', 'te', 'tr', 'tl', 'er', 'el', 'ea', 'rl', 'ra', 'rn', 'la', 'ln', 'ld', 'an', 'ad', 'nd', 'd_']
+simulate_experiments DEBUG:bigram activity per cycle: 3.761532145824012
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.35420388]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0.37658798884181865
+simulate_experiments DEBUG:total activity: 46.654464838009005
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: mutter
+simulate_experiments DEBUG:['_m', 'mu', 'mt', 'ut', 'ue', 'tt', 'te', 'tr', 'er', 'r_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.6743071970107293
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.48411208]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0.4841120842334178
+simulate_experiments DEBUG:total activity: 65.43805840915996
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: mutter
+simulate_experiments DEBUG:['_m', 'mu', 'mt', 'ut', 'ue', 'tt', 'te', 'tr', 'er', 'r_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.6743071970107293
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.56305166]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0.56305165709246
+simulate_experiments DEBUG:total activity: 80.608076007319
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 1
+simulate_experiments DEBUG:recognized words ['ter_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: mutter
+simulate_experiments DEBUG:['_m', 'mu', 'mt', 'ut', 'ue', 'tt', 'te', 'tr', 'er', 'r_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.6743071970107293
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.62131958]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0.6213195845689183
+simulate_experiments DEBUG:total activity: 93.5551342550986
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 1
+simulate_experiments DEBUG:recognized words ['ter_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: mutter
+simulate_experiments DEBUG:['_m', 'mu', 'mt', 'ut', 'ue', 'tt', 'te', 'tr', 'er', 'r_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.6743071970107293
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.66978787]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0.6697878654182278
+simulate_experiments DEBUG:total activity: 104.69905367270991
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 3
+simulate_experiments DEBUG:recognized words ['te_', 'ter_', 'er_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: mutter
+simulate_experiments DEBUG:['_m', 'mu', 'mt', 'ut', 'ue', 'tt', 'te', 'tr', 'er', 'r_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.6743071970107293
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.71269842]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0.7126984159593431
+simulate_experiments DEBUG:total activity: 114.31281482058385
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 3
+simulate_experiments DEBUG:recognized words ['te_', 'ter_', 'er_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: mutter
+simulate_experiments DEBUG:['_m', 'mu', 'mt', 'ut', 'ue', 'tt', 'te', 'tr', 'er', 'r_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.6743071970107293
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.75189632]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0.7518963215722517
+simulate_experiments DEBUG:total activity: 122.67308226608826
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 4
+simulate_experiments DEBUG:recognized words ['te_', 'ter_', 'ster_', 'er_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: mutter
+simulate_experiments DEBUG:['_m', 'mu', 'mt', 'ut', 'ue', 'tt', 'te', 'tr', 'er', 'r_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.6743071970107293
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.78802489]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0.78802489138264
+simulate_experiments DEBUG:total activity: 129.8909125403061
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 8
+simulate_experiments DEBUG:recognized words ['_mutter_', 'te_', 'tet_', 'eter_', 'ter_', 'tert_', 'ster_', 'er_']
+simulate_experiments INFO:word mutter matched in slot 0
+simulate_experiments INFO:matched word is target word
+simulate_experiments INFO:reaction time: 500 ms
+simulate_experiments INFO:end of trial 
+
+simulate_experiments INFO:trial: 4
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: banane
+simulate_experiments DEBUG:['_b', 'ba', 'bn', 'an', 'aa', 'na', 'nn', 'ne', 'ae', 'e_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.6743071970107284
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0.34261469622173674
+simulate_experiments DEBUG:total activity: 23.556848777355203
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: banane
+simulate_experiments DEBUG:['_b', 'ba', 'bn', 'an', 'aa', 'na', 'nn', 'ne', 'ae', 'e_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.6743071970107284
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0.5358849818060831
+simulate_experiments DEBUG:total activity: 38.5319461955877
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: mutter
+simulate_experiments DEBUG:['_m', 'mu', 'mt', 'ut', 'ue', 'tt', 'te', 'tr', 'er', 'r_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.6743071970107293
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.31699794]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0.31699794214144117
+simulate_experiments DEBUG:total activity: 61.807854539884175
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: mutter
+simulate_experiments DEBUG:['_m', 'mu', 'mt', 'ut', 'ue', 'tt', 'te', 'tr', 'er', 'r_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.6743071970107293
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.48385439]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0.48385439190349677
+simulate_experiments DEBUG:total activity: 79.13879516937904
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: mutter
+simulate_experiments DEBUG:['_m', 'mu', 'mt', 'ut', 'ue', 'tt', 'te', 'tr', 'er', 'r_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.6743071970107293
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.58341822]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0.5834182203289092
+simulate_experiments DEBUG:total activity: 92.95923027566937
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: mutter
+simulate_experiments DEBUG:['_m', 'mu', 'mt', 'ut', 'ue', 'tt', 'te', 'tr', 'er', 'r_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.6743071970107293
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.65490304]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0.6549030392411831
+simulate_experiments DEBUG:total activity: 104.77212645155052
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 3
+simulate_experiments DEBUG:recognized words ['te_', 'ter_', 'er_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: mutter
+simulate_experiments DEBUG:['_m', 'mu', 'mt', 'ut', 'ue', 'tt', 'te', 'tr', 'er', 'r_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.6743071970107293
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.71212]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0.7121199995805187
+simulate_experiments DEBUG:total activity: 114.8722910677189
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 3
+simulate_experiments DEBUG:recognized words ['te_', 'ter_', 'er_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: mutter
+simulate_experiments DEBUG:['_m', 'mu', 'mt', 'ut', 'ue', 'tt', 'te', 'tr', 'er', 'r_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.6743071970107293
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.76060286]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0.7606028641386542
+simulate_experiments DEBUG:total activity: 123.622501326931
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 3
+simulate_experiments DEBUG:recognized words ['te_', 'ter_', 'er_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: mutter
+simulate_experiments DEBUG:['_m', 'mu', 'mt', 'ut', 'ue', 'tt', 'te', 'tr', 'er', 'r_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.6743071970107293
+simulate_experiments DEBUG:target index:[1]
+simulate_experiments DEBUG:target activity:[0.80258785]
+simulate_experiments DEBUG:target threshold:[0.76497175]
+simulate_experiments DEBUG:stimulus activity:0.8025878467238833
+simulate_experiments DEBUG:total activity: 131.16630598118104
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 4
+simulate_experiments DEBUG:recognized words ['_mutter_', 'te_', 'ter_', 'er_']
+simulate_experiments INFO:word mutter matched in slot 0
+simulate_experiments INFO:matched word is target word
+simulate_experiments INFO:reaction time: 500 ms
+simulate_experiments INFO:end of trial 
+
+simulate_experiments INFO:trial: 5
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesichtarf
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ca', 'ht', 'ha', 'hr', 'ta', 'tr', 'tf', 'ar', 'af', 'rf', 'f_']
+simulate_experiments DEBUG:bigram activity per cycle: 3.761532145824012
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.17367816]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.2040201421280537
+simulate_experiments DEBUG:total activity: 16.771812403168806
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesichtarf
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ca', 'ht', 'ha', 'hr', 'ta', 'tr', 'tf', 'ar', 'af', 'rf', 'f_']
+simulate_experiments DEBUG:bigram activity per cycle: 3.761532145824012
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.22066747]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.30749587171808296
+simulate_experiments DEBUG:total activity: 27.147472011122314
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.25146736]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.25146735769281464
+simulate_experiments DEBUG:total activity: 36.33694239050186
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.26336915]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.2633691466383596
+simulate_experiments DEBUG:total activity: 43.732699597091894
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.27292938]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.272929383891541
+simulate_experiments DEBUG:total activity: 50.326187780554086
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.2825569]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.2825568982329478
+simulate_experiments DEBUG:total activity: 56.232131085422765
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.29153612]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.2915361205963574
+simulate_experiments DEBUG:total activity: 61.44417918619714
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.30252702]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.30252702269853576
+simulate_experiments DEBUG:total activity: 66.091761638556
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.31672333]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.3167233300624369
+simulate_experiments DEBUG:total activity: 70.25354932528799
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 2
+simulate_experiments DEBUG:recognized words ['t_', 'isch_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.33458505]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.33458504684497464
+simulate_experiments DEBUG:total activity: 73.99621188251142
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 2
+simulate_experiments DEBUG:recognized words ['t_', 'isch_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.35605368]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.3560536769071193
+simulate_experiments DEBUG:total activity: 77.38988885930146
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 2
+simulate_experiments DEBUG:recognized words ['t_', 'isch_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.38066934]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.380669344107589
+simulate_experiments DEBUG:total activity: 80.44037132900753
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 3
+simulate_experiments DEBUG:recognized words ['t_', 'isch_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.40786757]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.40786757057538214
+simulate_experiments DEBUG:total activity: 83.22251865109119
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 4
+simulate_experiments DEBUG:recognized words ['es_', 't_', 'isch_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.43242952]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.43242952203532076
+simulate_experiments DEBUG:total activity: 85.64224021565872
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 4
+simulate_experiments DEBUG:recognized words ['es_', 't_', 'isch_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.45575384]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.4557538369379774
+simulate_experiments DEBUG:total activity: 87.77918383598055
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 5
+simulate_experiments DEBUG:recognized words ['es_', 't_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.4787438]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.4787437987501995
+simulate_experiments DEBUG:total activity: 89.71443108821464
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 5
+simulate_experiments DEBUG:recognized words ['es_', 't_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.50132402]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.5013240238003838
+simulate_experiments DEBUG:total activity: 91.46642488974149
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 5
+simulate_experiments DEBUG:recognized words ['es_', 't_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.52366286]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.5236628590503131
+simulate_experiments DEBUG:total activity: 93.08694832558403
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 5
+simulate_experiments DEBUG:recognized words ['es_', 't_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.54495318]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.5449531756379111
+simulate_experiments DEBUG:total activity: 94.5532373002318
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 5
+simulate_experiments DEBUG:recognized words ['es_', 't_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.56535044]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.5653504369112019
+simulate_experiments DEBUG:total activity: 95.87372825735349
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 5
+simulate_experiments DEBUG:recognized words ['es_', 't_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.58521287]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.5852128716089902
+simulate_experiments DEBUG:total activity: 97.073499618025
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 6
+simulate_experiments DEBUG:recognized words ['es_', 'ische_', 't_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.60468219]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.6046821888355378
+simulate_experiments DEBUG:total activity: 98.1587764492759
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 6
+simulate_experiments DEBUG:recognized words ['es_', 'ische_', 't_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.62397177]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.623971768090685
+simulate_experiments DEBUG:total activity: 99.13586936907168
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 6
+simulate_experiments DEBUG:recognized words ['es_', 'ische_', 't_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.64319703]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.6431970270531426
+simulate_experiments DEBUG:total activity: 100.01107106293766
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 8
+simulate_experiments DEBUG:recognized words ['es_', 'heit_', 'ische_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.66239507]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.6623950659826705
+simulate_experiments DEBUG:total activity: 100.79127273681772
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 9
+simulate_experiments DEBUG:recognized words ['est_', 'es_', 'heit_', 'ische_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.68155196]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.6815519572659305
+simulate_experiments DEBUG:total activity: 101.48613674440253
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 10
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'ische_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.70060919]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.7006091927403262
+simulate_experiments DEBUG:total activity: 102.10757390234336
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 10
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'ische_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.71946431]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.7194643108185051
+simulate_experiments DEBUG:total activity: 102.6670553486765
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 11
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.737955]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.7379550032003659
+simulate_experiments DEBUG:total activity: 103.20106957967279
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 11
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.7557544]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.7557544041968882
+simulate_experiments DEBUG:total activity: 103.70535528389858
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.77254509]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.7725450880824798
+simulate_experiments DEBUG:total activity: 104.14527062488087
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.7884232]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.7884231995117925
+simulate_experiments DEBUG:total activity: 104.55183962948165
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.80338466]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.8033846630330492
+simulate_experiments DEBUG:total activity: 104.89976469262739
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.81752674]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.8175267421102237
+simulate_experiments DEBUG:total activity: 105.19941390587941
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.83090212]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.8309021162209159
+simulate_experiments DEBUG:total activity: 105.46669392338285
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.84349609]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.8434960851795985
+simulate_experiments DEBUG:total activity: 105.70695063467049
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.85529241]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.8552924139681525
+simulate_experiments DEBUG:total activity: 105.94005600388074
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.86619529]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.8661952945896307
+simulate_experiments DEBUG:total activity: 106.14553592419776
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.87625668]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.8762566768399349
+simulate_experiments DEBUG:total activity: 106.32818407687988
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.88553024]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.8855302400790189
+simulate_experiments DEBUG:total activity: 106.48530912229526
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.89405273]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.8940527283092174
+simulate_experiments DEBUG:total activity: 106.61665733208996
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.90184526]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.9018452562364224
+simulate_experiments DEBUG:total activity: 106.72620544909694
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.90891549]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.9089154927687643
+simulate_experiments DEBUG:total activity: 106.86223389057756
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.9150118]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.9150117964867983
+simulate_experiments DEBUG:total activity: 106.9927290282509
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.92020846]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.9202084555619664
+simulate_experiments DEBUG:total activity: 107.11440255334661
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.92465674]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.9246567377718663
+simulate_experiments DEBUG:total activity: 107.22271197763504
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.9284827]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.9284827007126604
+simulate_experiments DEBUG:total activity: 107.3170326775545
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.93179476]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.9317947551308231
+simulate_experiments DEBUG:total activity: 107.40410721965983
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.93467804]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.9346780381970206
+simulate_experiments DEBUG:total activity: 107.4795135078352
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.93720258]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.937202584010757
+simulate_experiments DEBUG:total activity: 107.54559486407413
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.93942459]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.9394245937858143
+simulate_experiments DEBUG:total activity: 107.60440206790713
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.94138936]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.9413893629826178
+simulate_experiments DEBUG:total activity: 107.65602396424119
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 13
+simulate_experiments DEBUG:recognized words ['_gesicht_', 'est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:word gesicht matched in slot 0
+simulate_experiments INFO:matched word is target word
+simulate_experiments INFO:reaction time: 1575 ms
+simulate_experiments INFO:end of trial 
+
+simulate_experiments INFO:trial: 6
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: hashgrid screen
+simulate_experiments DEBUG:['_#', '##', '#_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.279542897554733
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0
+simulate_experiments DEBUG:total activity: 0.0
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: holz
+simulate_experiments DEBUG:['_h', 'ho', 'hl', 'hz', 'ol', 'oz', 'lz', 'z_']
+simulate_experiments DEBUG:bigram activity per cycle: 1.865557091508979
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.3323146541985313
+simulate_experiments DEBUG:total activity: 3.3992536189461373
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: holz
+simulate_experiments DEBUG:['_h', 'ho', 'hl', 'hz', 'ol', 'oz', 'lz', 'z_']
+simulate_experiments DEBUG:bigram activity per cycle: 1.865557091508979
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.5595277863077898
+simulate_experiments DEBUG:total activity: 6.024573662506603
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.21983576]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.21983576059450757
+simulate_experiments DEBUG:total activity: 23.831619673278986
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.3007777]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.3007776971249886
+simulate_experiments DEBUG:total activity: 34.23916457663231
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.33951375]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.33951374740091966
+simulate_experiments DEBUG:total activity: 41.610185525006905
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.37417587]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.37417586998066205
+simulate_experiments DEBUG:total activity: 48.062994507065255
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.41037251]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.4103725054162527
+simulate_experiments DEBUG:total activity: 53.816225249877625
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.44822352]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.4482235236342184
+simulate_experiments DEBUG:total activity: 59.00660600005865
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 0
+simulate_experiments DEBUG:recognized words []
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.4821423]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.482142300812717
+simulate_experiments DEBUG:total activity: 63.597148388598065
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 1
+simulate_experiments DEBUG:recognized words ['t_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.51300309]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.5130030862209358
+simulate_experiments DEBUG:total activity: 67.63101723993948
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 1
+simulate_experiments DEBUG:recognized words ['t_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.54292797]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.5429279714854527
+simulate_experiments DEBUG:total activity: 71.28303391824863
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 2
+simulate_experiments DEBUG:recognized words ['t_', 'isch_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.57217904]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.5721790447925562
+simulate_experiments DEBUG:total activity: 74.58014728972027
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 2
+simulate_experiments DEBUG:recognized words ['t_', 'isch_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.60111131]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.6011113137911643
+simulate_experiments DEBUG:total activity: 77.58470512391472
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 2
+simulate_experiments DEBUG:recognized words ['t_', 'isch_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.62982229]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.6298222850573152
+simulate_experiments DEBUG:total activity: 80.31421054849199
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 3
+simulate_experiments DEBUG:recognized words ['t_', 'isch_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.65784324]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.6578432390062576
+simulate_experiments DEBUG:total activity: 82.84018131259813
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 4
+simulate_experiments DEBUG:recognized words ['es_', 't_', 'isch_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.68410087]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.6841008696288247
+simulate_experiments DEBUG:total activity: 85.1325652582126
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 5
+simulate_experiments DEBUG:recognized words ['es_', 't_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.70853816]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.7085381576676713
+simulate_experiments DEBUG:total activity: 87.17519065158126
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 5
+simulate_experiments DEBUG:recognized words ['es_', 't_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.73152273]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.7315227317253415
+simulate_experiments DEBUG:total activity: 89.02319251948703
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 5
+simulate_experiments DEBUG:recognized words ['es_', 't_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.7531882]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.7531882046751384
+simulate_experiments DEBUG:total activity: 90.67700262472968
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 5
+simulate_experiments DEBUG:recognized words ['es_', 't_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.77368033]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.7736803313581558
+simulate_experiments DEBUG:total activity: 92.15519995575079
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 5
+simulate_experiments DEBUG:recognized words ['es_', 't_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.79302799]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.7930279949807877
+simulate_experiments DEBUG:total activity: 93.53642599885872
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 5
+simulate_experiments DEBUG:recognized words ['es_', 't_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.81086334]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.8108633414671896
+simulate_experiments DEBUG:total activity: 94.79821361828418
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 6
+simulate_experiments DEBUG:recognized words ['es_', 'ische_', 't_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.82722252]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.8272225183186067
+simulate_experiments DEBUG:total activity: 95.93063358865476
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 6
+simulate_experiments DEBUG:recognized words ['es_', 'ische_', 't_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.84222686]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.842226856950532
+simulate_experiments DEBUG:total activity: 96.9613641097135
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 7
+simulate_experiments DEBUG:recognized words ['es_', 'ische_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.8559307]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.8559306983817629
+simulate_experiments DEBUG:total activity: 97.90872922092422
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 7
+simulate_experiments DEBUG:recognized words ['es_', 'ische_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.86831184]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.868311842963024
+simulate_experiments DEBUG:total activity: 98.75919796950879
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 9
+simulate_experiments DEBUG:recognized words ['est_', 'es_', 'heit_', 'ische_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.87946775]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.8794677456803744
+simulate_experiments DEBUG:total activity: 99.53736455348144
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 9
+simulate_experiments DEBUG:recognized words ['est_', 'es_', 'heit_', 'ische_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.88943218]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.8894321799694574
+simulate_experiments DEBUG:total activity: 100.22933323319643
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 11
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.89828136]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.8982813564421972
+simulate_experiments DEBUG:total activity: 100.89982450378312
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 11
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.90577296]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.9057729551183479
+simulate_experiments DEBUG:total activity: 101.49309963154879
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 11
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.91216648]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.9121664770552544
+simulate_experiments DEBUG:total activity: 102.01939809003262
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 11
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.91766196]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.9176619623885242
+simulate_experiments DEBUG:total activity: 102.48929646602865
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.92241483]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.9224148293463083
+simulate_experiments DEBUG:total activity: 102.92979485243207
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.92653143]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.9265314301628294
+simulate_experiments DEBUG:total activity: 103.33026970748598
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.93011426]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.9301142641474858
+simulate_experiments DEBUG:total activity: 103.70943353789853
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.93324065]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.9332406459682226
+simulate_experiments DEBUG:total activity: 104.06046906463928
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.93598048]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.9359804806968073
+simulate_experiments DEBUG:total activity: 104.3869271505296
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.93839098]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.9383909808328266
+simulate_experiments DEBUG:total activity: 104.68791584271278
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 12
+simulate_experiments DEBUG:recognized words ['est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:
+
+simulate_experiments DEBUG:Stimulus: gesicht
+simulate_experiments DEBUG:['_g', 'ge', 'gs', 'gi', 'es', 'ei', 'ec', 'si', 'sc', 'sh', 'ic', 'ih', 'it', 'ch', 'ct', 'ht', 't_']
+simulate_experiments DEBUG:bigram activity per cycle: 2.8919259018100614
+simulate_experiments DEBUG:target index:[2]
+simulate_experiments DEBUG:target activity:[0.9405199]
+simulate_experiments DEBUG:target threshold:[0.94011299]
+simulate_experiments DEBUG:stimulus activity:0.9405199044783364
+simulate_experiments DEBUG:total activity: 104.96262920950586
+simulate_experiments DEBUG:nr. above thresh. in lexicon: 13
+simulate_experiments DEBUG:recognized words ['_gesicht_', 'est_', 'lich_', 'es_', 'heit_', 'et_', 'ische_', 'schaft_', 't_', 'st_', 'isch_', 'ist_', 'reich_']
+simulate_experiments INFO:word gesicht matched in slot 0
+simulate_experiments INFO:matched word is target word
+simulate_experiments INFO:reaction time: 1250 ms
+simulate_experiments INFO:end of trial 
+

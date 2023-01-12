@@ -1,0 +1,50 @@
+item_nr,all,target,condition,condition_flipped
+1,je ne comprends pas,1,normal,scrambled
+2,ne sais pas,1,normal,scrambled
+3,nous serai nous sons,1,normal,scrambled
+4,pas je suis arrive,1,normal,scrambled
+5,je suis desole,1,normal,scrambled
+6,comme je suis perdu,1,scrambled,normal
+7,mais suis pres de,1,scrambled,normal
+8,te tiens au courant,1,scrambled,normal
+9,je vais etre en retard,1,scrambled,normal
+10,je ne comprends pas,1,scrambled,normal
+11,je ne sais pas,1,scrambled,normal
+12,je serai a la ,2,normal,scrambled
+13,je suis arrive mais,2,normal,scrambled
+14,je suis dans plus,2,normal,scrambled
+15,je suis perdu,2,normal,scrambled
+16,je suis avec de,2,normal,scrambled
+17,je te tiens au courant,2,normal,scrambled
+18,je vais en retard,2,normal,scrambled
+19,je attends mes amis,2,scrambled,normal
+20,je ne comprends pas,2,scrambled,normal
+21,je ne sais pas,2,scrambled,normal
+22,je serai vous,2,scrambled,normal
+23,je suis fumer,2,scrambled,normal
+24,je suis comme ca,2,scrambled,normal
+25,je suis perdu,3,normal,scrambled
+26,je ne comprends pas,3,normal,scrambled
+27,je ne sais pas,3,normal,scrambled
+28,je te tiens au courant,3,normal,scrambled
+29,je ne comprends pas,3,normal,scrambled
+30,je ne sais pas,3,normal,scrambled
+31,je suis perdu,3,normal,scrambled
+32,je ne comprends pas,3,scrambled,normal
+33,je ne sais pas,3,scrambled,normal
+34,je vais en retard,3,scrambled,normal
+35,je ne comprends pas,3,scrambled,normal
+36,je ne sais pas,3,scrambled,normal
+37,je serai pas,3,scrambled,normal
+38,je te tiens au courant,4,normal,scrambled
+39,je vais manger en retard,4,normal,scrambled
+40,je te tiens au courant,4,normal,scrambled
+41,je vais la en retard,4,normal,scrambled
+42,je te tiens au courant,4,normal,scrambled
+43,je vais bisous en retard,4,normal,scrambled
+44,je attends mes amis,4,scrambled,normal
+45,je ne comprends pas,4,scrambled,normal
+46,je te tiens au courant,4,scrambled,normal
+47,je vais comme en retard,4,scrambled,normal
+48,je te tiens au courant,4,scrambled,normal
+49,je vais dire en retard,4,scrambled,normal

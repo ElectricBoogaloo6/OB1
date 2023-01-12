@@ -1,0 +1,9 @@
+chardet==5.0.0
+matplotlib==3.5.1
+nltk==3.7
+numpy==1.23.1
+pandas==1.4.2
+pygame==2.1.2
+scipy==1.8.1
+seaborn==0.11.2
+strsimpy==0.2.1
