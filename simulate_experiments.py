@@ -69,7 +69,10 @@ def simulate_experiments(task, pm):
     lengtes = []
 
     #KM: stopping 'prime' and 'all' being added to the NONWORDS 
-    file_nonwords = pd.read_csv(r"C:\Users\Konstantin\Documents\VU_work\OB1_SAM\Stimuli\EmbeddedWords_Nonwordslower_german_all_csv.csv", sep = ';')
+    # German
+    #file_nonwords = pd.read_csv(r"C:\Users\Konstantin\Documents\OB1-1\Stimuli\EmbeddedWords_Nonwordslower_german_all_csv.csv", sep = ';')
+    # French
+    file_nonwords = pd.read_csv(r"C:\Users\Konstantin\Documents\OB1-1\Stimuli\EmbeddedWords_Nonwords_french_all_csv.csv", sep = ';')
     to_mask = file_nonwords[file_nonwords['condition'].str.contains('stem|suffix')]
     nonwords = list(to_mask['all'].str.split(' ', expand=True).stack().unique())
         #ORIGINAL
@@ -565,6 +568,12 @@ def simulate_experiments(task, pm):
 
         # KM: Getting the columns for EmbeddedWords_German
         elif task == "EmbeddedWords_German":
+            target = stim['target'][trial]
+            all_data[trial]['prime'] = prime
+            all_data[trial]['item_nr'] = stim['item_nr'][trial]
+
+        # KM: Getting the columns for EmbeddedWords_French
+        elif task == "EmbeddedWords_French":
             target = stim['target'][trial]
             all_data[trial]['prime'] = prime
             all_data[trial]['item_nr'] = stim['item_nr'][trial]

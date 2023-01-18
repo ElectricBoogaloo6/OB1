@@ -25,7 +25,7 @@ from types import SimpleNamespace
 def return_global_params():
     """
     set parameters and task to run here
-    possible tasks =  ["EmbeddedWords" "EmbeddedWords_German", "Sentence", "Flanker", "Classification", "Transposed", "PSCall"] 
+    possible tasks =  ["EmbeddedWords" "EmbeddedWords_German", "EmbeddedWords_French", "Sentence", "Flanker", "Classification", "Transposed", "PSCall"] 
     NOTE: PSCall for normal text reading in german
 
     Returns
@@ -34,7 +34,7 @@ def return_global_params():
 
     """
 
-    task_to_run = 'EmbeddedWords_German'  # NV: task to run. can be one of: Flanker, Sentence, EmbeddedWords, Classification, Transposed or PSCall
+    task_to_run = 'EmbeddedWords_French'  # NV: task to run. can be one of: Flanker, Sentence, EmbeddedWords, Classification, Transposed or PSCall
                                           # KM: EmbeddedWords_German runs the German version of the EmbeddedWords task (Beyersmann 2020)
 
     # NV: dictionnary for abbreviations, useful for filenames
@@ -100,12 +100,31 @@ def return_attributes(task_to_run):
     # KM: Adding EmbeddedWords_German
     elif task_to_run == 'EmbeddedWords_German':
         # nonwords lower
-        stim = pd.read_csv(r"C:\Users\Konstantin\Documents\VU_work\OB1_SAM\Stimuli\EmbeddedWords_Nonwordslower_german_all_csv.csv", sep=';')
+        stim = pd.read_csv(r"C:\Users\Konstantin\Documents\OB1-1\Stimuli\EmbeddedWords_Nonwordslower_german_all_csv.csv", sep=';')
         stim['all'] = stim['all'].astype('unicode') # Read words in a specific unicode type, utf-8 mainly
         return TaskAttributes(
             stim,
             stim['all'],
             language='german', 
+            stimcycles=120,
+            is_experiment=True,
+            is_priming_task=True,
+            blankscreen_type='hashgrid',
+            blankscreen_cycles_begin=5,  # FIXME : 20
+            blankscreen_cycles_end=0,
+            ncyclesprime=2, 
+            POS_implemented = False, 
+            affix_implemented = True 
+        )
+    # KM: EmbeddedWords_French
+    elif task_to_run == 'EmbeddedWords_French':
+        # nonwords lower
+        stim = pd.read_csv(r"C:\Users\Konstantin\Documents\OB1-1\Stimuli\EmbeddedWords_Nonwords_french_all_csv.csv", sep=';')
+        stim['all'] = stim['all'].astype('unicode') # Read words in a specific unicode type, utf-8 mainly
+        return TaskAttributes(
+            stim,
+            stim['all'],
+            language='french', 
             stimcycles=120,
             is_experiment=True,
             is_priming_task=True,

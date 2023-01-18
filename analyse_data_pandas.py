@@ -246,10 +246,13 @@ def get_results_simulation(task,input_file_all_data,input_file_unrecognized_word
             stim = pd.read_table('./Stimuli/Flanker_stimuli_all_csv.csv', sep=',')
         elif task=="EmbeddedWords":
             stim = pd.read_table('./Stimuli/EmbeddedWords_stimuli_all_csv.csv', sep=';')
-        #KM
+        #KM German embedded words
         elif task=="EmbeddedWords_German":
-            # nonwords lowercase
+            # German nonwords lowercase
             stim = pd.read_table('./Stimuli/EmbeddedWords_Nonwordslower_german_all_csv.csv', sep=';')
+        elif task=="EmbeddedWords_French":
+            # French nonwords
+            stim = pd.read_table('./Stimuli/EmbeddedWords_Nonwords_french_all_csv.csv', sep=';')
         elif task == "Transposed":
             stim = pd.read_table('./Stimuli/Transposed_stimuli_all.csv', sep=',')
         elif task == "Classification":

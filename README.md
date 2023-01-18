@@ -1,3 +1,6 @@
+### Notes January 2023
+Just like the German nonwords/realwords, the french variant has been implemented under "EmbeddedWords_French" task name. The plots and results of this can be found in the OB1_analysis folder - OB1_taskperformance_french_nonwords.ipynb. Additionally, PDF scraper notebook and the scraped .txt files have been added.
+
 ### Note December 2023
 German affix splitter has been implemented, more details on that can be found: https://github.com/ElectricBoogaloo6/German_affix_splitter
 As the focus of Beyersmann (2020) study was on the nonwords (with combinations of stem/non-stem and suffix/non-suffix) and real complex/simple words for comparison, the affix splitter was implemented along with lexicon and the stimuli from the 2020 study. The plots and results of this can be found in the OB1_analysis folder - OB1_taskperformance_german_nonwords.ipynb.

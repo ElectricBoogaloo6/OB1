@@ -44,9 +44,11 @@ def get_words(pm, task): #NV: get_words_task merged with get_words
             my_data = list(set(my_data + add_data))
             
         else:
-            #temp = pd.read_csv(r"C:\Users\Konstantin\Documents\VU_work\OB1_SAM\Stimuli\EmbeddedWords_Nonwords_german_all_csv.csv", sep=';')
-            # nonwords lower
-            temp = pd.read_csv(r"C:\Users\Konstantin\Documents\VU_work\OB1_SAM\Stimuli\EmbeddedWords_Nonwordslower_german_all_csv.csv", sep=';')
+            #temp = pd.read_csv(r"C:\Users\Konstantin\Documents\OB1-1\Stimuli\EmbeddedWords_Nonwords_german_all_csv.csv", sep=';')
+            # German nonwords lower
+            #temp = pd.read_csv(r"C:\Users\Konstantin\Documents\OB1-1\Stimuli\EmbeddedWords_Nonwordslower_german_all_csv.csv", sep=';')
+            # French nonwords
+            temp = pd.read_csv(r"C:\Users\Konstantin\Documents\OB1-1\Stimuli\EmbeddedWords_Nonwords_french_all_csv.csv", sep=';')
             my_data = list(temp['all'].str.split(' ', expand=True).stack().unique())
 
      
@@ -94,8 +96,8 @@ def create_freq_file(freqthreshold, nr_highfreqwords):
         freq_words.drop(columns=['cfreqmovies'], inplace=True)
 
     elif pm.language == 'german':
-        freqlist_arrays = pd.read_csv(r"C:\Users\Konstantin\Documents\VU_work\OB1_SAM\Texts\SUBTLEX_DE.txt", usecols=(0, 1, 3, 4, 5, 9), dtype={'Spelling': np.dtype(str)},
-                                      encoding=chardet.detect(open(r"C:\Users\Konstantin\Documents\VU_work\OB1_SAM\Texts\SUBTLEX_DE.txt", "rb").read())['encoding'], delimiter="\t")
+        freqlist_arrays = pd.read_csv(r"C:\Users\Konstantin\Documents\OB1-1\Texts\SUBTLEX_DE.txt", usecols=(0, 1, 3, 4, 5, 9), dtype={'Spelling': np.dtype(str)},
+                                      encoding=chardet.detect(open(r"C:\Users\Konstantin\Documents\OB1-1\Texts\SUBTLEX_DE.txt", "rb").read())['encoding'], delimiter="\t")
         
 
         freqlist_arrays.sort_values(by=['lgSUBTLEX'], ascending=False,
